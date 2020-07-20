@@ -5,8 +5,7 @@ const Card = props => [
     <div>
         <h1>Карточка {props.number}</h1>
         <p>{props.title}</p>
-        { props.attr && <p>{props.attr.map(attr => <span>{attr}&nbsp;</span>)}</p> }
-        { props.children && props.children.map(child => <strong>{ child }</strong>) }
+        <button onClick={props.onChengeTitle}>Нажми на меня!</button>
     </div>
 ]
 export default Card;
